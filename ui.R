@@ -59,7 +59,7 @@ ui <- fluidPage(
                   min = 0,
                   max = 7,
                   step = 0.5,
-                  value = c(2.5,3.5)),
+                  value = c(2.5,3.5))
       
       
     ),
