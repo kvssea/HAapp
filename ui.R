@@ -1,10 +1,11 @@
-weandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F)
+w
 library(dplyr)
 library(shiny)
 library(shinyWidgets)
 library(DT)
 
 ui <- fluidPage(
+  eandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F)
   titlePanel(title = div(img(src='halogo.png'))),
   setSliderColor(c('Red','Red','Red','Red','Red','Red'),c(1:6)),
   sidebarLayout(
