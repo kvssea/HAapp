@@ -1,6 +1,6 @@
 
 server <- function(input, output) {
-  weandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F)
+  weandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F, encoding = "UTF-8")
   filter_MP <- function() {
     weandata %>% 
       {if(input$MPbox == 1) filter(.,`Melt.Point` >= input$MP[1] & `Melt.Point` <= input$MP[2]) else(.)}%>% 
