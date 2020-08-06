@@ -1,6 +1,6 @@
 
 server <- function(input, output) {
-   weandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F, encoding = "UTF-8")
+   weandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F, encoding = "UTF-8"),
   filter_MP <- function() {
    
     weandata %>% 
