@@ -1,4 +1,4 @@
-
+weandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F)
 server <- function(input, output) {
   
   filter_MP <- function() {
