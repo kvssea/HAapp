@@ -1,6 +1,6 @@
 
 server <- function(input, output) {
-   weandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F, encoding = "UTF-8"),
+   weandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F, encoding = "UTF-8")
   filter_MP <- function() {
    
     weandata %>% 
@@ -16,14 +16,13 @@ server <- function(input, output) {
   }
   
   
-  output$testqc <- DT::renderDT({
-    
-    data <- datatable(filter_MP(),options = list(
-      
-      pageLength = 20))
-    
-    
-  })
+ output$testqc <- DT::renderDT({
+        
+        data <- datatable(filter_MP(),options = list(
+            pageLength = 20))
+        
+        
+    })
 }
 
 # Run the application 
