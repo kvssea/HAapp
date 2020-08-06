@@ -17,7 +17,8 @@ server <- function(input, output) {
   
   output$testqc <- DT::renderDT({
     
-    data <- datatable(filter_MP(),options = list(regex = TRUE,
+    data <- datatable(filter_MP(),options = list(
+      search = list(regex = TRUE),
       pageLength = 20))
     
     
