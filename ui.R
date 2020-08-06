@@ -1,4 +1,4 @@
-#weandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F)
+weandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F)
 library(dplyr)
 library(shiny)
 library(shinyWidgets)
