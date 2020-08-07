@@ -1,12 +1,7 @@
-#weandata <- read.csv('HAIappData.csv', header = T, stringsAsFactors = F)
-#setwd("C://Users/kaminskik/Desktop")
-#weandata <- read.csv('HAIdata2.csv', header = T, stringsAsFactors = F)
 
 library(dplyr)
 library(shiny)
-#library(shinyWidgets)
 library(DT)
-#weandata <- read.csv('HAIdata3.csv', header = T, stringsAsFactors = F)
 
 bootstrapPage(
     ui <- fluidPage(
